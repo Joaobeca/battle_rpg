@@ -132,6 +132,6 @@ while running:
     if enemy.get_hp() == 0:
         print(bcolors.OKGREEN + "You WIN!" + bcolors.ENDC)
         running = False
-    elif (player1.get_hp() or player2.get_hp() or player3.get_hp()) == 0:
+    elif player1.get_hp() == 0 and player2.get_hp() == 0 and player3.get_hp() == 0:
         print(bcolors.FAIL + "Your enemy has defeated you!" + bcolors.ENDC)
         running = False
